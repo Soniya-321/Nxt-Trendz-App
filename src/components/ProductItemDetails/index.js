@@ -52,17 +52,17 @@ class ProductItemDetails extends Component {
         totalReviews: data.total_reviews,
         similarProducts: data.similar_products,
       }
-      const updateSimilarProd = updateData.similarProducts.map(data => ({
-        id: data.id,
-        imageUrl: data.image_url,
-        availability: data.availability,
-        brand: data.brand,
-        description: data.description,
-        price: data.price,
-        rating: data.rating,
-        style: data.style,
-        title: data.title,
-        totalReviews: data.total_reviews,
+      const updateSimilarProd = updateData.similarProducts.map(each => ({
+        id: each.id,
+        imageUrl: each.image_url,
+        availability: each.availability,
+        brand: each.brand,
+        description: each.description,
+        price: each.price,
+        rating: each.rating,
+        style: each.style,
+        title: each.title,
+        totalReviews: each.total_reviews,
       }))
 
       this.setState({
